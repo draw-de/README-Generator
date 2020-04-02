@@ -11,6 +11,6 @@ Download application from the repository.
 Run the javascript file in the terminal then answer the questions that is being given.
 
 ## Issues
-If there's any issues with the application, please contact [draw-de](https://github.com/users/draw-de) or make an issue ticket
+If there's any issues with the application, please contact [draw-de](https://github.com/draw-de) or make an issue ticket
 
 ###### Used the generator to create this README file! (:
