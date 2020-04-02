@@ -1,15 +1,16 @@
-#README Generator ![alt text](https://avatars2.githubusercontent.com/u/57506579?v=4 "draw-de's Avatar Picture")
+# README Generator
+![alt text](https://avatars2.githubusercontent.com/u/57506579?v=4 "draw-de's Avatar Picture")
 
-##Description
+## Description
 A simple README Generator that's created in Javascript!
 
-##Installation
+## Installation
 Download application from the repository.
 
-##Usage
+## Usage
 Run the javascript file in the terminal then answer the questions that is being given.
 
-##Issues
+## Issues
 If there's any issues with the application, please contact [draw-de](https://api.github.com/users/draw-de) or make an issue ticket
 
-######Used the generator to create this README file! (:
+###### Used the generator to create this README file! (:
