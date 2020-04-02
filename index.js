@@ -57,35 +57,37 @@ inquirer
 
       function generateREADME(answers) {
         if (answers.license === "None") {
-          return `#${answers.title} ![alt text](${obj.data.avatar_url} "${obj.data.login}'s Avatar Picture")
+          return `# ${answers.title} 
+![alt text](${obj.data.avatar_url} "${obj.data.login}'s Avatar Picture")
 
-##Description
+## Description
 ${answers.description}
 
-##Installation
+## Installation
 ${answers.installation}
 
-##Usage
+## Usage
 ${answers.usage}
 
-##Issues
-If there's any issues with the application, please contact [${obj.data.login}](${obj.data.url}) or make an issue ticket`;
+## Issues
+If there's any issues with the application, please contact [${obj.data.login}](${obj.data.html_url}) or make an issue ticket`;
         } else {
-          return `#${answers.title} ![alt text](${obj.data.avatar_url} "${obj.data.login}'s Avatar Picture")
+          return `# ${answers.title}
+![alt text](${obj.data.avatar_url} "${obj.data.login}'s Avatar Picture")
 
-##Description
+## Description
 ${answers.description}
 
-##Installation
+## Installation
 ${answers.installation}
 
-##Usage
+## Usage
 ${answers.usage}
 
-##Issues
-If there's any issues with the application, please contact [${obj.data.login}](${obj.data.url}) or make an issue ticket
+## Issues
+If there's any issues with the application, please contact [${obj.data.login}](${obj.data.html_url}) or make an issue ticket
 
-######${answers.license}`;
+###### ${answers.license}`;
         }
       }
 
