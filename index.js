@@ -20,8 +20,6 @@ inquirer
       method: "get",
       url: githubURL
     }).then(function(obj) {
-      // console.log(obj.data);
-
       function promptUser() {
         return inquirer.prompt([
           {
@@ -58,23 +56,37 @@ inquirer
       }
 
       function generateREADME(answers) {
-        return `(${obj.data.avatar_url} "${obj.data.login}'s Avatar Picture)
-        
-        #${answers.title}
-        
-        ##Description
-        ${answers.description}
-        
-        ##Installation
-        ${answers.installation}
-        
-        ##Usage
-        ${answers.usage}
-      
-        ##Issues
-        If there's any issues with the application, please contact [${obj.data.login}](${obj.data.url}) or make an issue ticket
-        
-        ######${answers.license}}`;
+        if (answers.license === "None") {
+          return `#${answers.title} ![alt text](${obj.data.avatar_url} "${obj.data.login}'s Avatar Picture")
+
+##Description
+${answers.description}
+
+##Installation
+${answers.installation}
+
+##Usage
+${answers.usage}
+
+##Issues
+If there's any issues with the application, please contact [${obj.data.login}](${obj.data.url}) or make an issue ticket`;
+        } else {
+          return `#${answers.title} ![alt text](${obj.data.avatar_url} "${obj.data.login}'s Avatar Picture")
+
+##Description
+${answers.description}
+
+##Installation
+${answers.installation}
+
+##Usage
+${answers.usage}
+
+##Issues
+If there's any issues with the application, please contact [${obj.data.login}](${obj.data.url}) or make an issue ticket
+
+######${answers.license}`;
+        }
       }
 
       promptUser()
